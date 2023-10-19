@@ -1,0 +1,127 @@
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin-top: 10px;
+    background: linear-gradient(to right, #d3efcd, #c9e6ff); /* Horizontal gradient from very light green to very light blue */
+    color: #101111; /* Change text color to a suitable contrast color */
+    position: relative; /* Set position relative to place circles */
+  }
+  
+  /* Add circles using pseudo-elements */
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 80px;
+    height: 80px;
+    border: 2px dotted white; /* Hollow dotted white border */
+    border-radius: 50%; /* Create a circle shape */
+  }
+  
+  .hero-image {
+    flex: 1;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  .hero-content {
+    flex: 1;
+  }
+  
+  .subheading {
+    font-size: 30px;
+  }
+  
+  .hero-sentence {
+    font-size: 36px;
+    margin-top: 20px;
+  }
+  
+  .typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    animation: typing 4s steps(30, end),  step-end infinite;
+  }
+  
+  .typed-text {
+    border-right: 1px solid rgb(18, 18, 19);
+    padding-right: 5px;
+  }
+  
+  .beeping-cursor {
+    animation: cursor-beep 0.5s infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: white;
+    }
+  }
+  
+  @keyframes cursor-beep {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  
+  .search-icon {
+    
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .hero-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
